@@ -22,6 +22,13 @@ body {
     gap: 20px;
 }
 
+.top-bar-container {
+    height: 80%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
 .btn {
     background: #008000;
     color: #fff;
@@ -30,6 +37,10 @@ body {
     cursor: pointer;
     padding: 0.7rem 2rem;
     margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .btn:hover {
@@ -50,6 +61,8 @@ body {
 
 .page-info {
     margin-left: 1rem;
+    display: flex;
+    gap: 5px;
 }
 
 
@@ -62,4 +75,27 @@ body {
     background: orangered;
     color: #fff;
     padding: 1rem;
+}
+
+@media screen and (max-width:680px) {
+    .btn p {
+        display: none;
+    }
+
+    .btn {
+        padding: 5px 7px;
+    }
+
+    .page-info p {
+        display: none;
+    }
+
+    .dowload_btn {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    #pdf-render {
+        height: 400px;
+    }
 }

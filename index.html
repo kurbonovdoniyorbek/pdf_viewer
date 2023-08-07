@@ -13,18 +13,21 @@
 
 <body>
     <div class="top-bar">
-        <div>
+        <div class="top-bar-container">
             <button class="btn" id="prev-page">
-                <i class="fas fa-arrow-circle-left"></i> Orqaga
+                <i class="fas fa-arrow-circle-left"></i>
+                <p> Orqaga</p>
             </button>
             <button class="btn" id="next-page">
-                Keyingisi <i class="fas fa-arrow-circle-right"></i>
+                <p> Keyingisi </p><i class="fas fa-arrow-circle-right"></i>
             </button>
             <span class="page-info">
-                Kitob sahifalari: <span id="page-num"></span> /<span id="page-count"></span>
+                <p>Kitob sahifalari:</p> <span id="page-num"></span> /<span id="page-count"></span>
             </span>
         </div>
-        <a id="dowload_link" download class="dowload_btn">Dowload <i class="fas fa-circle-down"></i></a>
+        <a id="dowload_link" download class="dowload_btn">
+            <p>Dowload</p> <i class="fas fa-circle-down"></i>
+        </a>
     </div>
 
     <canvas id="pdf-render"></canvas>
